@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7c4494d2e70d4a8d8d409d3ae5d8d399" Name="Diagram1">
+        <EntityTypeShape EntityType="RecipeModel.Comment" Width="1.5" PointX="7.5" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecipeModel.Rate" Width="1.5" PointX="7.5" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecipeModel.Recipe" Width="1.5" PointX="5.25" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecipeModel.Role" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecipeModel.UserProfile" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecipeModel.User" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecipeModel.UsersRole" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <AssociationConnector Association="RecipeModel.FK_Comments_Recipe" ManuallyRouted="false" />
+        <AssociationConnector Association="RecipeModel.FK_Comments_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="RecipeModel.FK_Rate_Recipe" ManuallyRouted="false" />
+        <AssociationConnector Association="RecipeModel.FK_Recipe_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="RecipeModel.FK_UsersRole_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="RecipeModel.FK_UserProfile_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="RecipeModel.FK_UsersRole_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

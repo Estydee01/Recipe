@@ -1,0 +1,42 @@
+﻿@model RecipeAssig.Models.Rate
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Rate</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RecipeId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecipeId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.rate1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.rate1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Recipe.RecipeCat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Recipe.RecipeCat)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

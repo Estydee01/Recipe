@@ -1,0 +1,42 @@
+﻿@model RecipeAssig.Models.Role
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Role</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Admin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Admin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserManager)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserManager)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RecipeManager)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecipeManager)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
